@@ -16,3 +16,7 @@ run-web:
 # Lint the codebase
 lint:
 	uv run ruff check .
+
+# Deploy the agent to Agent Runtime
+deploy:
+	uv run agents-cli deploy --project ambient-expense-agent-501912 --region us-east1
